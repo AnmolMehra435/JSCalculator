@@ -1,22 +1,27 @@
 const span = document.querySelector("span");
 const buttons = document.querySelectorAll(".button")
 const clearBtn = document.querySelector(".clear");
-const solution = document.querySelector(".solution")
-
+const solution = document.querySelector(".solution");
+const h2 = document.querySelector("h2");
+const container = document.querySelector(".container");
+const operator = document.querySelectorAll(".operator")
 let number = "";
-let string = "";
+numb();
 
+function numb(){
 buttons.forEach((button)=>{
      button.onclick = () =>{
         number += button.innerText;
         if(number.length <= 12){
            span.innerText = number; 
-        }else{
+        }      
+        else{
             alert("Can only do calculations upto 12 digits.");
         }
-        
       }
 })
+}
+ 
 
 function sol(){ 
     clearBtn.onclick = () =>{
@@ -35,17 +40,16 @@ function sol(){
             alert("Can only do calculations upto 12 digits.")
           }
         }
-    })
+         })
 }
 
 
 solution.onclick = () =>{
     if(span.innerText !== ""){
-        sol()
+        sol();
     }else{
         alert("Please enter some value.")
     }
-
 
 }
 
@@ -55,3 +59,5 @@ function clr(){
 }
 
 clearBtn.onclick = clr;
+
+
