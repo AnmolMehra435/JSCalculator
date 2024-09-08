@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    background-color: black;
+    max-height: 100vh;
+}
+
+.container{
+    background-color: black;
+    min-width: 395px;
+    max-width: 395px;
+    min-height: 600px;
+    margin: auto;
+    margin-top: 80px;
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+button{
+    height: 90px;
+    width: 90px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(45, 43, 43);
+    font-family: verdana;
+    cursor: pointer;
+    border: none;
+
+}
+
+button:active{
+   border: 1px solid white; 
+}
+
+.clear, .zero{
+    width: 187px;
+}
+h2{
+    height: 100px;
+    width: 380px;
+    background-color: black;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+span{
+    color: white;
+    font-size: 45px;
+    font-family: Verdana;
+    
+}
+
+.solution{
+    background-color: orangered;
+}
+
+.clear, .sum, .subtract, .divide, .multiply, .modulus{
+    color: orangered;
+}
