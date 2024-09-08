@@ -3,3 +3,5 @@ I just made a calculator using javascript mainly through the eval() function of 
 
 
 ps: I just fixed the error using try-catch method on eval() now the calculator runs smoothly without any issue.
+
+psps: while fixing above error I faced another error where all value in eval() would return error because my variable 'val' was inside so its scope was only inside try but we needed in sol() so I fixed it by defining val in sol scope.Now it runs smoothly.

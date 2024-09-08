@@ -28,10 +28,11 @@ function sol(){
         span.innerText = "";
         val = "";
     } 
+    let val = "";
     try{
-    let val = eval(span.innerText);
+    val = eval(span.innerText);
     }catch(err){
-       alert("Can only do one operation at a time");
+       alert("Please enter valid operation");
        span.innerText = "";
        val = "";
     }
