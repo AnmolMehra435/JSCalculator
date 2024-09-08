@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: black;
     max-height: 100vh;
+    overflow: hidden;
 }
 
 .container{
@@ -42,7 +43,7 @@ button:active{
 h2{
     height: 100px;
     max-width: 380px;
-    background-color: black;
+    background-color: white;
     margin-left: 5px;
     margin-bottom: 5px;
     border-radius: 10px;
@@ -54,8 +55,9 @@ h2{
 }
 
 span{
+    overflow: auto;
     max-width: 380px;
-    color: white;
+    color: black;
     font-size: 45px;
     font-family: Verdana;
 }
