@@ -28,7 +28,13 @@ function sol(){
         span.innerText = "";
         val = "";
     } 
+    try{
     let val = eval(span.innerText);
+    }catch(err){
+       alert("Can only do one operation at a time");
+       span.innerText = "";
+       val = "";
+    }
     console.log(val);
     span.innerText = val;
     buttons.forEach((button) =>{
