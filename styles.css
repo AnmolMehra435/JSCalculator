@@ -66,6 +66,6 @@ span{
     background-color: orangered;
 }
 
-.sum, .subtract, .divide, .multiply, .modulus{
+.sum, .subtract, .divide, .multiply, .modulus, .remove{
     color: orangered;
 }

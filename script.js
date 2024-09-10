@@ -4,14 +4,16 @@ const clearBtn = document.querySelector(".clear");
 const solution = document.querySelector(".solution");
 const h2 = document.querySelector("h2");
 const container = document.querySelector(".container");
-const operator = document.querySelectorAll(".operator")
+const operator = document.querySelectorAll(".operator");
+const remove = document.querySelector(".remove");
 let number = "";
 numb();
 
 function numb(){
 buttons.forEach((button)=>{
      button.onclick = () =>{
-        number += button.innerText;
+      let val = button.innerText
+        number += val;
         if(number.length <= 12){
            span.innerText = number; 
         }      
@@ -68,3 +70,7 @@ function clr(){
 clearBtn.onclick = clr;
 
 
+remove.onclick = () =>{
+  span.innerText = span.innerText.slice(0, -1);
+  number = span.innerText;
+}
