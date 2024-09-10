@@ -8,3 +8,5 @@ psps: while fixing above error I faced another error where all value in eval() w
 
 
 pspsps: added a del button that removes only one digit so that it is easier to calculate also removed the modulus button and added del onto that so that I don't have to redesign tha calculator.
+
+pspspsps: fixed a error with del button that ocurred after we have done our first calculation fixed it.

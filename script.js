@@ -30,6 +30,10 @@ function sol(){
         span.innerText = "";
         val = "";
     } 
+    remove.onclick = () =>{
+      span.innerText = span.innerText.slice(0, -1);
+      val = span.innerText;
+    }
     let val = "";
     try{
     val = eval(span.innerText);
